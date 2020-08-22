@@ -83,3 +83,7 @@ production:
   database: SurfBoard_production
   username: SurfBoard
   password: <%= ENV['SURFBOARD_DATABASE_PASSWORD'] %>
+
+  production:
+  <<: *default
+  url: <%= ENV['POSTGRESQL_ADDON_URI'] %>
