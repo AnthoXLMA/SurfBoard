@@ -6,6 +6,10 @@ gem 'dotenv-rails', groups: [:development, :test]
 gem 'cloudinary', '~> 1.12.0'
 gem 'geocoder'
 gem 'simple_form'
+gem 'autoprefixer-rails'
+gem 'font-awesome-sass'
+gem 'devise'
+gem 'faker'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.2'
