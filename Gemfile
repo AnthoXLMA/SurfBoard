@@ -5,6 +5,7 @@ ruby '2.6.6'
 gem 'dotenv-rails', groups: [:development, :test]
 gem 'cloudinary', '~> 1.12.0'
 gem 'geocoder'
+=======
 gem 'simple_form'
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass'
