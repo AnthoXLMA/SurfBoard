@@ -4,14 +4,26 @@
     <title>SurfBoard</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <%# <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,200&display=swap" rel="stylesheet">  %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
   </head>
 
   <body>
+    <div>
+      <%= render 'shared/navbar' %>
+    </div>
+    <p class="alert"><%= alert %></p>
     <p class="notice"><%= notice %></p>
-       <p class="alert"><%= alert %></p>
     <%= yield %>
+
+
+    <footer>
+      <%= render 'shared/footer' %>
+    </footer>
+
   </body>
 </html>
